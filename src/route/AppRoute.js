@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import AboutPage from '../pages/AboutPage';
 import CartPage from '../pages/CartPage';
 import ContactPage from '../pages/ContactPage';
 import FavouritePage from '../pages/FavouritePage';
@@ -24,6 +25,7 @@ export class AppRoute extends Component {
           <Route exact path="/purchase" element={<PurchasePage/>} />
           <Route exact path="/privacy" element={<PrivacyPage />} />
           <Route exact path="/refund" element={<RefundPage/>} />
+          <Route exact path="/about" element={<AboutPage/>} />
 
           <Route exact path="/productdetails" element={<ProductDetailsPage />} />
           <Route exact path="/notification" element={<NotificationPage />} />
